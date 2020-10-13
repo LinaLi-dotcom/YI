@@ -22,7 +22,6 @@
 		9E504A4B252613810034AACC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E504A4A252613810034AACC /* GoogleService-Info.plist */; };
 		9E8B78C0252B32DB00F3DAD1 /* CategorierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */; };
 		9E8B78C5252B47F900F3DAD1 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */; };
-		9EABF368252F9A810031A178 /* charCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EABF367252F9A810031A178 /* charCollectionViewCell.swift */; };
 		9EAE1F6B25332EA20034E82C /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1F6A25332EA20034E82C /* CharViewController.swift */; };
 		9EAE1F702533756F0034E82C /* CharCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */; };
 		BD1B149001643D7663426A92 /* Pods_YI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DBD9F199FDA026F8FC054F /* Pods_YI.framework */; };
@@ -69,7 +68,6 @@
 		9E504A4A252613810034AACC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorierViewController.swift; sourceTree = "<group>"; };
 		9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
-		9EABF367252F9A810031A178 /* charCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charCollectionViewCell.swift; sourceTree = "<group>"; };
 		9EAE1F6A25332EA20034E82C /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
 		9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCollectionViewCell.swift; sourceTree = "<group>"; };
 		AB7FF2207EE480F48E9525C6 /* Pods-YITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YITests.debug.xcconfig"; path = "Target Support Files/Pods-YITests/Pods-YITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 		9E4C7CB32524A87300471EFE = {
 			isa = PBXGroup;
 			children = (
-				9EABF367252F9A810031A178 /* charCollectionViewCell.swift */,
 				9E4C7CBE2524A87300471EFE /* YI */,
 				9E4C7CD52524A87300471EFE /* YITests */,
 				9E4C7CE02524A87300471EFE /* YIUITests */,
@@ -440,7 +437,6 @@
 				9E4C7CF62524AB4B00471EFE /* LoginRegisterViewController.swift in Sources */,
 				9E8B78C0252B32DB00F3DAD1 /* CategorierViewController.swift in Sources */,
 				9EAE1F702533756F0034E82C /* CharCollectionViewCell.swift in Sources */,
-				9EABF368252F9A810031A178 /* charCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
