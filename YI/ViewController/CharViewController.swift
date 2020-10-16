@@ -88,19 +88,16 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
         if (section == 0)
-        {
-            return 1
-        }
-        if (section == 1)
         {
             return theStrokes.count
         }
-        if (section == 2)
+        if (section == 1)
         {
             return simpleRadicals.count
         }
-        if (section == 3)
+        if (section == 2)
         {
             return chineseNumbers.count
         }
@@ -113,15 +110,15 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharCell", for: indexPath) as! CharCollectionViewCell
        
-        if (indexPath.section == 1)
+        if (indexPath.section == 0)
         {
             cell.theCharLabel.text = theStrokes[indexPath.item]
         }
-        if (indexPath.section == 2)
+        if (indexPath.section == 1)
         {
             cell.theCharLabel.text = simpleRadicals [indexPath.item]
         }
-        if (indexPath.section == 3)
+        if (indexPath.section == 2)
         {
             cell.theCharLabel.text = chineseNumbers [indexPath.item]
         }

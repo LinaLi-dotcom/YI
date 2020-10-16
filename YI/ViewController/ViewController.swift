@@ -11,14 +11,12 @@ import FirebaseStorage
 
 
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
-
-    
-    @IBOutlet weak var FirstTableView: UITableView!
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
+ 
     @IBOutlet weak var firebaseimageview: UIImageView!
     
     
-    var drawChars = [String]()
+    /*var drawChars = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,12 +41,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             let cell = FirstTableView.dequeueReusableCell(withIdentifier: "Raden", for: indexPath) as! FirstTableViewCell
             cell.FirstText.text = drawChars[indexPath.row]
             return cell
-        }
+        }*/
         
     
         
-      /*  // Get a reference to the storage service using the default Firebase App
-                let storage = Storage.storage()
+      // Get a reference to the storage service using the default Firebase App
+               /* let storage = Storage.storage()
 
                 // Create a storage reference from our storage service
                 let storageRef = storage.reference()
@@ -67,13 +65,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                   }
                 }
 
-    }*/
+    }
     
 //    from categorytableview to character viewcontroller
     
     
     
-    /*override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         
     }
 
@@ -96,9 +94,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
         }
          
-    } */
+    }
 }
-    
+   
     
 
 
+}*/

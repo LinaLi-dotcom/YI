@@ -9,7 +9,6 @@ import UIKit
 
 class CategorierViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
 
-    @IBOutlet weak var LäggtillTextField: UITextField!
     @IBOutlet weak var CategoryTableView: UITableView!
     
     var category = [String] ()
@@ -44,7 +43,7 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
         {
             return
         }
-        let categoryItem = category[indexPath.row]
+        _ = category[indexPath.row]
         
         performSegue(withIdentifier: "showChar", sender: indexPath.row)
     }
