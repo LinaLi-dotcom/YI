@@ -12,4 +12,12 @@ class CharCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var theCharLabel: UILabel!
     
+    /*func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let clickedChar = theCharLabel[indexPath.item]
+        
+        print(clickedChar)
+        
+    }*/
+    
 }
