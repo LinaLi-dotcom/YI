@@ -1,8 +1,8 @@
 //
-//  WritingViewController.swift
+//  drawView.swift
 //  YI
 //
-//  Created by Lina Li on 2020-10-16.
+//  Created by Lina Li on 2020-10-19.
 //
 
 import UIKit
@@ -37,42 +37,40 @@ class Canvas: UIView{
                 context.addLine(to: p)
             }
         }
-        }
         
         context.strokePath()
         
     }
-        
-    //    var line = [CGPoint] ()
-        var lines = [[CGPoint]] ()
-        
-        override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-            lines.append([CGPoint] ())
-        }
-        
-    //    track the finger as we move across screen
-        override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-            guard let point = touches.first?.location(in: nil) else {return}
-    //        print(point)
-          
-            guard var lastLine = lines.popLast() else {return}
-            lastLine.append(point)
-            lines.append(lastLine)
-            
-    //        var lastLine = lines.last
-    //        lastline.append(point)
-    //
-    //
-    //        line.append(point)
-            
-            setNeedsDisplay()
-        }
-        
-    }
-
-
-class WritingViewController: UIViewController {
     
+//    var line = [CGPoint] ()
+    var lines = [[CGPoint]] ()
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        lines.append([CGPoint])
+    }
+    
+//    track the finger as we move across screen
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let point = touches.first?.location(in: nil) else {return}
+//        print(point)
+      
+        guard var lastLine = lines.popLast() else {return}
+        lastLine.append(point)
+        lines.append(lastLine)
+        
+//        var lastLine = lines.last
+//        lastline.append(point)
+//
+//
+//        line.append(point)
+        
+        setNeedsDisplay()
+    }
+    
+}
+
+class ViewController: UIViewController {
+
     let canvas = Canvas()
     
     override func viewDidLoad()
@@ -83,17 +81,8 @@ class WritingViewController: UIViewController {
         canvas.backgroundColor = .white
         canvas.frame = view.frame
         
-        charLabel.text = currentChar
+    
     }
    
-
-    var currentChar = ""
-   
-    @IBOutlet weak var charLabel: UILabel!
-    
-    @IBAction func drawButton(_ sender: UIButton) {
-    }
-    
-
 
 }

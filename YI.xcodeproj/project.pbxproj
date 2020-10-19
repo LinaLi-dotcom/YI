@@ -142,14 +142,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		9E4454BB2538678700C27493 /* ViewCell */ = {
+		9E4454BB2538678700C27493 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */,
 				9E4F1CA4252669BF006A0B7E /* FirstTableViewCell.swift */,
 				9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */,
 			);
-			path = ViewCell;
+			path = View;
 			sourceTree = "<group>";
 		};
 		9E4454BC253867B100C27493 /* storyboard */ = {
@@ -186,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				9E4454BC253867B100C27493 /* storyboard */,
-				9E4454BB2538678700C27493 /* ViewCell */,
+				9E4454BB2538678700C27493 /* View */,
 				9E4454BA2538675300C27493 /* ViewController */,
 				9E4C7CBF2524A87300471EFE /* AppDelegate.swift */,
 				9E4C7CC12524A87300471EFE /* SceneDelegate.swift */,
