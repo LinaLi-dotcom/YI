@@ -73,6 +73,11 @@ class Canvas: UIView{
 
 class WritingViewController: UIViewController {
     
+    @IBOutlet weak var drawView: UIView!
+    @IBOutlet weak var charLabel: UILabel!
+    
+    var currentChar = ""
+    
     let canvas = Canvas()
     
     override func viewDidLoad()
@@ -81,19 +86,10 @@ class WritingViewController: UIViewController {
         
         view.addSubview(canvas)
         canvas.backgroundColor = .white
-        canvas.frame = view.frame
+        canvas.frame = drawView.frame
         
+
         charLabel.text = currentChar
     }
    
-
-    var currentChar = ""
-   
-    @IBOutlet weak var charLabel: UILabel!
-    
-    @IBAction func drawButton(_ sender: UIButton) {
-    }
-    
-
-
 }
