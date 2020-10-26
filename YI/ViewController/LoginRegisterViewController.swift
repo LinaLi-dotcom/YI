@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseAuth
 
 class LoginRegisterViewController: UIViewController {
 
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -26,13 +28,15 @@ class LoginRegisterViewController: UIViewController {
         Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextField.text!) { authResult, error in
          if (error == nil)
          {
-//            skapa konto OK
-            print("skapa konto ok")
+            print("konto är ok")
             self.dismiss(animated: false, completion: nil)
          } else
-        {
+//        code for infoming user about errors
+         {
+           
             print("skapa konto error")
             print(error?.localizedDescription)
+            self.errorLabel.text = error?.localizedDescription
         }
         }
     }
@@ -47,9 +51,11 @@ class LoginRegisterViewController: UIViewController {
             } else{
                 print("login error")
                 print(error?.localizedDescription)
+                self.errorLabel.text = error?.localizedDescription
             }
-            
         }
-
 }
+    @IBAction func Noacount(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }

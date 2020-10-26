@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class Canvas: UIView{
     
@@ -67,28 +68,43 @@ class Canvas: UIView{
             
             setNeedsDisplay()
         }
-        
     }
-
 
 class WritingViewController: UIViewController {
     
     @IBOutlet weak var drawView: UIView!
     @IBOutlet weak var charLabel: UILabel!
+    @IBOutlet weak var meaningLabel: UILabel!
+    
     
     var currentChar = ""
-    
     let canvas = Canvas()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        speechService.say("yi")
+    }
+    
+    @IBAction func speakButton(_ sender: UIButton) {
+        
+    }
+    
+    func speak(){
+        let  voice = AVSpeechSynthesisVoice(identifier: "zh-CH")
+        let  toread = AVSpeechUtterance(string: "currentChar")
+        toread.voice = voice
+        
+        
+    }
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        view.addSubview(canvas)
+        drawView.addSubview(canvas)
         canvas.backgroundColor = .white
         canvas.frame = drawView.frame
-        
-
         charLabel.text = currentChar
     }
    

@@ -9,8 +9,6 @@ import UIKit
 
 class CharViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    
-
     var charList = [String]()
 
     @IBOutlet weak var CharCollectionView: UICollectionView!
