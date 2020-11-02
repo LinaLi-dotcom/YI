@@ -54,8 +54,6 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
         
     }
    
-    @IBAction func läggtillKnappen(_ sender: Any) {
-    }
 }
 
 

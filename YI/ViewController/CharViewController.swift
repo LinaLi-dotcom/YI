@@ -148,10 +148,6 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
             
     }
     
-        
-        
-        
-    
     @IBAction func goBack(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

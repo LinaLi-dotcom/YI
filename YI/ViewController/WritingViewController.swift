@@ -54,7 +54,7 @@ class Canvas: UIView{
     //    track the finger as we move across screen
         override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
             
-            guard let point = touches.first?.location(in: nil) else {return}
+            guard let point = touches.first?.location(in: self) else {return}
     //        print(point)
           
             guard var lastLine = lines.popLast() else {return}
@@ -93,20 +93,18 @@ class WritingViewController: UIViewController {
     }
     
     func speak(){
-        let  voice = AVSpeechSynthesisVoice(identifier: "zh-CH")
-        let  toread = AVSpeechUtterance(string: "currentChar")
-        toread.voice = voice
-        
-//        func speakPinyin()
-       ////        {
-       ////         let utterance = AVSpeechUtterance(string: pinyinlist)
-       ////            self.utterance.voice = AVSpeechSynthesisVoice(language: "ch-CH")
-       ////            self.utterance.rate = 0.1
-       ////
-       ////         let synthesizer = AVSpeechSynthesizer()
-       ////            self.ynthesizer.speak(utterance)
+//        let  voice = AVSpeechSynthesisVoice(identifier: "zh-CH")
+//        let  toread = AVSpeechUtterance(string: "currentChar")
+//        toread.voice = voice
         
         
+        let utterance = AVSpeechUtterance(string: currentChar)
+        utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
+        utterance.rate = 0.1
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+
         
     }
     
@@ -114,10 +112,14 @@ class WritingViewController: UIViewController {
     {
         super.viewDidLoad()
         
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         drawView.addSubview(canvas)
         canvas.backgroundColor = .white
-        canvas.frame = drawView.frame
+        canvas.frame = drawView.bounds
         charLabel.text = currentChar
     }
-   
+    
 }
