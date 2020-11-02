@@ -26,7 +26,7 @@ class Canvas: UIView{
         context.move(to: startPoint)
          context.addLine(to: endPoint)*/
         
-        context.setStrokeColor(UIColor.red.cgColor)
+        context.setStrokeColor(UIColor.black.cgColor)
         context.setLineWidth(10)
         context.setLineCap(.butt)
         
@@ -53,6 +53,7 @@ class Canvas: UIView{
         
     //    track the finger as we move across screen
         override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+            
             guard let point = touches.first?.location(in: nil) else {return}
     //        print(point)
           
@@ -80,12 +81,14 @@ class WritingViewController: UIViewController {
     var currentChar = ""
     let canvas = Canvas()
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-//        speechService.say("yi")
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+////        speechService.say("yi")
+//    }
     
     @IBAction func speakButton(_ sender: UIButton) {
+        
+        speak()
         
     }
     
@@ -94,9 +97,18 @@ class WritingViewController: UIViewController {
         let  toread = AVSpeechUtterance(string: "currentChar")
         toread.voice = voice
         
+//        func speakPinyin()
+       ////        {
+       ////         let utterance = AVSpeechUtterance(string: pinyinlist)
+       ////            self.utterance.voice = AVSpeechSynthesisVoice(language: "ch-CH")
+       ////            self.utterance.rate = 0.1
+       ////
+       ////         let synthesizer = AVSpeechSynthesizer()
+       ////            self.ynthesizer.speak(utterance)
+        
+        
         
     }
-    
     
     override func viewDidLoad()
     {

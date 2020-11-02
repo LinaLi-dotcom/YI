@@ -136,10 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				9E4454C025386EDE00C27493 /* HomeViewController.swift */,
-				9EE9110325397F0600204165 /* WritingViewController.swift */,
-				9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */,
 				9E4C7CF52524AB4B00471EFE /* LoginRegisterViewController.swift */,
+				9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */,
 				9EAE1F6A25332EA20034E82C /* CharViewController.swift */,
+				9EE9110325397F0600204165 /* WritingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -147,8 +147,8 @@
 		9E4454BB2538678700C27493 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */,
 				9E4F1CA4252669BF006A0B7E /* FirstTableViewCell.swift */,
+				9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */,
 				9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */,
 				9E6166832541EE160066ADF5 /* CharacterPinyinList.swift */,
 			);
@@ -646,7 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SGANM6Z4U7;
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
 				INFOPLIST_FILE = YI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,7 +666,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SGANM6Z4U7;
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
 				INFOPLIST_FILE = YI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
