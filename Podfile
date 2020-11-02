@@ -9,6 +9,8 @@ target 'YI' do
  pod 'Firebase/Analytics'
  pod 'Firebase/Auth' 
  pod 'Firebase/Storage'
+ pod 'Firebase/Core'
+ pod 'Firebase/Firestore'
  
   target 'YITests' do
     inherit! :search_paths

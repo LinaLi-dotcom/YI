@@ -1,23 +1,35 @@
 {
   "images" : [
     {
-      "filename" : "angryteddy02-1.jpg",
-      "idiom" : "universal",
-      "scale" : "1x"
+      "filename" : "IOSHS-relax.png",
+      "idiom" : "universal"
     },
     {
-      "filename" : "angryteddy02.jpg",
-      "idiom" : "universal",
-      "scale" : "2x"
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "light"
+        }
+      ],
+      "filename" : "IOSHS-relax-1.png",
+      "idiom" : "universal"
     },
     {
-      "filename" : "angryteddy03.jpg",
-      "idiom" : "universal",
-      "scale" : "3x"
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "RelaxDark.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }

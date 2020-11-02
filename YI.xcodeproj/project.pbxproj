@@ -20,6 +20,7 @@
 		9E4C7CF62524AB4B00471EFE /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C7CF52524AB4B00471EFE /* LoginRegisterViewController.swift */; };
 		9E4F1CA5252669BF006A0B7E /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F1CA4252669BF006A0B7E /* FirstTableViewCell.swift */; };
 		9E504A4B252613810034AACC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E504A4A252613810034AACC /* GoogleService-Info.plist */; };
+		9E6166842541EE160066ADF5 /* CharacterPinyinList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6166832541EE160066ADF5 /* CharacterPinyinList.swift */; };
 		9E8B78C0252B32DB00F3DAD1 /* CategorierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */; };
 		9E8B78C5252B47F900F3DAD1 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */; };
 		9EAE1F6B25332EA20034E82C /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1F6A25332EA20034E82C /* CharViewController.swift */; };
@@ -67,6 +68,7 @@
 		9E4C7CF52524AB4B00471EFE /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
 		9E4F1CA4252669BF006A0B7E /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
 		9E504A4A252613810034AACC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E6166832541EE160066ADF5 /* CharacterPinyinList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterPinyinList.swift; sourceTree = "<group>"; };
 		9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorierViewController.swift; sourceTree = "<group>"; };
 		9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		9EAE1F6A25332EA20034E82C /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
@@ -134,22 +136,23 @@
 			isa = PBXGroup;
 			children = (
 				9E4454C025386EDE00C27493 /* HomeViewController.swift */,
-				9EE9110325397F0600204165 /* WritingViewController.swift */,
-				9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */,
 				9E4C7CF52524AB4B00471EFE /* LoginRegisterViewController.swift */,
+				9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */,
 				9EAE1F6A25332EA20034E82C /* CharViewController.swift */,
+				9EE9110325397F0600204165 /* WritingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		9E4454BB2538678700C27493 /* ViewCell */ = {
+		9E4454BB2538678700C27493 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */,
 				9E4F1CA4252669BF006A0B7E /* FirstTableViewCell.swift */,
+				9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */,
 				9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */,
+				9E6166832541EE160066ADF5 /* CharacterPinyinList.swift */,
 			);
-			path = ViewCell;
+			path = View;
 			sourceTree = "<group>";
 		};
 		9E4454BC253867B100C27493 /* storyboard */ = {
@@ -186,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				9E4454BC253867B100C27493 /* storyboard */,
-				9E4454BB2538678700C27493 /* ViewCell */,
+				9E4454BB2538678700C27493 /* View */,
 				9E4454BA2538675300C27493 /* ViewController */,
 				9E4C7CBF2524A87300471EFE /* AppDelegate.swift */,
 				9E4C7CC12524A87300471EFE /* SceneDelegate.swift */,
@@ -459,6 +462,7 @@
 				9E4F1CA5252669BF006A0B7E /* FirstTableViewCell.swift in Sources */,
 				9E4C7CC22524A87300471EFE /* SceneDelegate.swift in Sources */,
 				9EAE1F6B25332EA20034E82C /* CharViewController.swift in Sources */,
+				9E6166842541EE160066ADF5 /* CharacterPinyinList.swift in Sources */,
 				9E4454C125386EDE00C27493 /* HomeViewController.swift in Sources */,
 				9EE9110425397F0600204165 /* WritingViewController.swift in Sources */,
 				9E8B78C5252B47F900F3DAD1 /* CategoryTableViewCell.swift in Sources */,
@@ -642,7 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SGANM6Z4U7;
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
 				INFOPLIST_FILE = YI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -662,7 +666,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SGANM6Z4U7;
+				DEVELOPMENT_TEAM = 93MKZBH3SD;
 				INFOPLIST_FILE = YI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
