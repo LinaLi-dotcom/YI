@@ -19,7 +19,7 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
         CategoryTableView.delegate = self
         CategoryTableView.dataSource = self
 
-        category.append("Nummers")
+        category.append("Numbers")
         category.append("The Strokes of Chinese Character")
         category.append("Simple Radicals")
         category.append("Time-Related")
