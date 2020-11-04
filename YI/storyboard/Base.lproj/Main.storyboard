@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9jw-ML-sYf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -22,10 +22,10 @@
                                 <color key="backgroundColor" red="0.86693477630000004" green="0.90172559019999998" blue="0.92157262559999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write &amp; Relax" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZp-HO-Qag">
-                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <rect key="frame" x="70.5" y="323" width="273" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="H0w-23-ROx"/>
-                                    <constraint firstAttribute="width" constant="250" id="mdE-8V-NSN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="mdE-8V-NSN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <nil key="textColor"/>
@@ -175,7 +175,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17z-fV-zfp">
                                 <rect key="frame" x="157" y="718" width="100" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="6qP-BA-8ro"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="6qP-BA-8ro"/>
                                     <constraint firstAttribute="height" constant="60" id="YPo-ye-iIc"/>
                                 </constraints>
                                 <state key="normal" title="Go Back"/>
@@ -194,7 +194,7 @@
                     <navigationItem key="navigationItem" id="4dB-OJ-DEM"/>
                     <connections>
                         <outlet property="CharCollectionView" destination="AZf-mv-x4B" id="GKN-ez-Fyo"/>
-                        <segue destination="Gav-yc-MfJ" kind="show" identifier="goWrite" id="7On-Yi-lmK"/>
+                        <segue destination="Gav-yc-MfJ" kind="presentation" identifier="goWrite" animates="NO" modalPresentationStyle="fullScreen" id="7On-Yi-lmK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qx-od-IJ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -212,7 +212,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc9-zo-KUI" customClass="charLabel">
                                 <rect key="frame" x="132" y="84" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="Ela-aG-XY2"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Ela-aG-XY2"/>
                                     <constraint firstAttribute="height" constant="150" id="NM4-Ff-uv8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
@@ -221,7 +221,7 @@
                                 <color key="shadowColor" red="1" green="0.69019607839999997" blue="0.80392156859999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRv-VW-NfG" customClass="drawView">
-                                <rect key="frame" x="20" y="298" width="374" height="455"/>
+                                <rect key="frame" x="20" y="298" width="374" height="504"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7we-14-i9b">
@@ -233,9 +233,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIJ-dl-LHT">
-                                <rect key="frame" x="177" y="774" width="60" height="30"/>
+                                <rect key="frame" x="70" y="810" width="60" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="4IT-Hb-zbl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="4IT-Hb-zbl"/>
                                     <constraint firstAttribute="height" constant="30" id="v9W-bI-DQ7"/>
                                 </constraints>
                                 <state key="normal" title="Go Back"/>
@@ -243,19 +243,31 @@
                                     <action selector="goback:" destination="Gav-yc-MfJ" eventType="touchUpInside" id="4PH-w9-Znf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AT-SE-8xp">
+                                <rect key="frame" x="274" y="810" width="60" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="GOH-TI-Wpi"/>
+                                </constraints>
+                                <state key="normal" title="Clear"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yHX-xf-u0F"/>
-                        <color key="backgroundColor" red="0.86693477630000004" green="0.90172559019999998" blue="0.92157262559999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.8666666666666667" green="0.90172559019999998" blue="0.92157262559999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="MRv-VW-NfG" firstAttribute="top" secondItem="7we-14-i9b" secondAttribute="bottom" constant="20" id="0at-B7-M9M"/>
                             <constraint firstItem="MRv-VW-NfG" firstAttribute="leading" secondItem="yHX-xf-u0F" secondAttribute="leading" constant="20" id="6Gc-Mw-se0"/>
                             <constraint firstItem="7we-14-i9b" firstAttribute="top" secondItem="Kc9-zo-KUI" secondAttribute="bottom" constant="8" symbolic="YES" id="G2w-Av-A24"/>
+                            <constraint firstItem="yHX-xf-u0F" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7we-14-i9b" secondAttribute="trailing" symbolic="YES" id="Gx5-0P-mBy"/>
                             <constraint firstItem="7we-14-i9b" firstAttribute="leading" secondItem="yHX-xf-u0F" secondAttribute="leading" constant="170" id="KDg-65-Da2"/>
                             <constraint firstItem="yHX-xf-u0F" firstAttribute="bottom" secondItem="MRv-VW-NfG" secondAttribute="bottom" constant="60" id="KLb-90-Vs2"/>
                             <constraint firstItem="Kc9-zo-KUI" firstAttribute="top" secondItem="yHX-xf-u0F" secondAttribute="top" constant="40" id="MFE-TW-DhU"/>
-                            <constraint firstItem="YIJ-dl-LHT" firstAttribute="top" secondItem="MRv-VW-NfG" secondAttribute="bottom" constant="21" id="RKt-lu-TZ3"/>
+                            <constraint firstItem="3AT-SE-8xp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YIJ-dl-LHT" secondAttribute="trailing" constant="8" symbolic="YES" id="OkH-oB-e2l"/>
+                            <constraint firstItem="3AT-SE-8xp" firstAttribute="top" secondItem="MRv-VW-NfG" secondAttribute="bottom" constant="8" symbolic="YES" id="QnA-m6-bAu"/>
+                            <constraint firstItem="YIJ-dl-LHT" firstAttribute="top" secondItem="MRv-VW-NfG" secondAttribute="bottom" constant="8" id="RKt-lu-TZ3"/>
+                            <constraint firstItem="yHX-xf-u0F" firstAttribute="bottom" secondItem="3AT-SE-8xp" secondAttribute="bottom" constant="20" id="TIF-FG-2ZP"/>
                             <constraint firstItem="Kc9-zo-KUI" firstAttribute="centerX" secondItem="3el-xh-U2d" secondAttribute="centerX" id="aj4-6J-nOv"/>
-                            <constraint firstItem="YIJ-dl-LHT" firstAttribute="centerX" secondItem="3el-xh-U2d" secondAttribute="centerX" id="pjG-af-DyR"/>
+                            <constraint firstItem="yHX-xf-u0F" firstAttribute="trailing" secondItem="3AT-SE-8xp" secondAttribute="trailing" constant="80" id="anR-iK-CvB"/>
+                            <constraint firstItem="YIJ-dl-LHT" firstAttribute="centerX" secondItem="3el-xh-U2d" secondAttribute="centerX" constant="-107" id="pjG-af-DyR"/>
                             <constraint firstItem="yHX-xf-u0F" firstAttribute="trailing" secondItem="MRv-VW-NfG" secondAttribute="trailing" constant="20" id="zG6-XV-c2h"/>
                         </constraints>
                     </view>
@@ -292,7 +304,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WeR-kw-7SJ"/>
+        <segue reference="7On-Yi-lmK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="1080" height="1920"/>
