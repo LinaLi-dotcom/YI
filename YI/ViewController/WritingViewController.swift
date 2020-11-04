@@ -122,4 +122,7 @@ class WritingViewController: UIViewController {
         charLabel.text = currentChar
     }
     
+    @IBAction func goback(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
