@@ -60,63 +60,10 @@ class Canvas: UIView{
         self.layer.sublayers = nil
         self.setNeedsDisplay()
     }
+  
     
     
-    //    override func draw(_ rect: CGRect) {
-////        custom drawing
-//        super.draw(rect)
-//
-//        guard let context = UIGraphicsGetCurrentContext() else
-//        {return}
-//
-//        context.setStrokeColor(UIColor.black.cgColor)
-//        context.setLineWidth(10)
-//        context.setLineCap(.butt)
-//
-//        lines.forEach {(line) in
-//        for (i, p) in line.enumerated(){
-//            if i == 0{
-//                context.move(to: p)
-//            } else{
-//                context.addLine(to: p)
-//            }
-//        }
-//        }
-//
-//        context.strokePath()
-//
-//    }
-//
-//    //    var line = [CGPoint] ()
-//        var lines = [[CGPoint]] ()
-//
-//        override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//            lines.append([CGPoint] ())
-//        }
-//
-//    //    track the finger as we move across screen
-//        override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-//
-//            guard let point = touches.first?.location(in: self) else {return}
-//    //        print(point)
-//
-//            guard var lastLine = lines.popLast() else {return}
-//            lastLine.append(point)
-//            lines.append(lastLine)
-//
-//    //        var lastLine = lines.last
-//    //        lastline.append(point)
-//    //
-//    //
-//    //        line.append(point)
-//
-//            setNeedsDisplay()
-//        }
-    @IBAction func clearButton(_ sender: Any) {
-    }
 }
-
-
 
 class WritingViewController: UIViewController {
     
@@ -128,30 +75,24 @@ class WritingViewController: UIViewController {
     var currentChar = ""
     let canvas = Canvas()
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-////        speechService.say("yi")
-//    }
+    //    override func viewDidAppear(_ animated: Bool) {
+    //        super.viewDidAppear(animated)
+    ////        speechService.say("yi")
+    //    }
     
     @IBAction func speakButton(_ sender: UIButton) {
-        
         speak()
-        
     }
     
     func speak(){
-//        let  voice = AVSpeechSynthesisVoice(identifier: "zh-CH")
-//        let  toread = AVSpeechUtterance(string: "currentChar")
-//        toread.voice = voice
-        
-        
+      
         let utterance = AVSpeechUtterance(string: currentChar)
         utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
         utterance.rate = 0.1
         
         let synthesizer = AVSpeechSynthesizer()
         synthesizer.speak(utterance)
-
+        
         
     }
     
@@ -172,5 +113,6 @@ class WritingViewController: UIViewController {
     @IBAction func goback(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-   
+    
+    
 }
