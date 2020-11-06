@@ -20,11 +20,11 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
         CategoryTableView.dataSource = self
 
         category.append("Numbers")
-        category.append("The Strokes of Chinese Characters")
-        category.append("Simple Radicals")
-        category.append("Time-Related")
-        category.append("Simple Characters")
-        category.append("Other Common Characters")
+        category.append("Strokes")
+        category.append("Radicals")
+        category.append("Time")
+        category.append("Characters")
+        category.append("Terms")
         
     }
     
@@ -38,6 +38,7 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
         return cell
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (category.count == 0)
         {
@@ -47,9 +48,9 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
         
         performSegue(withIdentifier: "showChar", sender: indexPath.row)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dest = segue.destination as! CharViewController
-       
         dest.charCategory = sender as! Int
         
     }

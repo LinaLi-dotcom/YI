@@ -56,12 +56,14 @@ class Canvas: UIView{
     
     func clearCanvas()
     {
+        if path != nil {
         path.removeAllPoints()
         self.layer.sublayers = nil
-        self.setNeedsDisplay()
+        self.setNeedsDisplay()}
+        else{
+            
+        }
     }
-  
-    
     
 }
 
@@ -69,17 +71,11 @@ class WritingViewController: UIViewController {
     
     @IBOutlet weak var drawView: UIView!
     @IBOutlet weak var charLabel: UILabel!
-    @IBOutlet weak var meaningLabel: UILabel!
-    
     
     var currentChar = ""
     let canvas = Canvas()
     
-    //    override func viewDidAppear(_ animated: Bool) {
-    //        super.viewDidAppear(animated)
-    ////        speechService.say("yi")
-    //    }
-    
+    @IBOutlet weak var meanLabel: UILabel!
     @IBAction func speakButton(_ sender: UIButton) {
         speak()
     }
@@ -99,8 +95,6 @@ class WritingViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -110,9 +104,14 @@ class WritingViewController: UIViewController {
         charLabel.text = currentChar
     }
     
-    @IBAction func goback(_ sender: UIButton) {
+
+
+    @IBAction func BackButton(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func ClearButton(_ sender: UIButton) {
+        canvas.clearCanvas()
+    }
     
 }

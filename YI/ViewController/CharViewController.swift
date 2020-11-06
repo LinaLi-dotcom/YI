@@ -9,16 +9,14 @@ import UIKit
 
 class CharViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
-    var charList = [String]()
-
+    var charList = [String] ()
+    
     @IBOutlet weak var CharCollectionView: UICollectionView!
     
     var charCategory = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         CharCollectionView.dataSource = self
         CharCollectionView.delegate = self
@@ -38,7 +36,7 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
 
         }
 
-        
+
         if(charCategory == 1)
         {
             charList.append("一")
@@ -88,7 +86,7 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
             charList.append("水")
             charList.append("心")
          }
-       
+
         if (charCategory == 3 )
         {
             charList.append("一月")
@@ -103,7 +101,7 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
             charList.append("十月")
             charList.append("十一月")
             charList.append("十二月")
-            
+
             charList.append("星期一")
             charList.append("星期二")
             charList.append("星期三")
@@ -112,7 +110,7 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
             charList.append("星期六")
             charList.append("星期日")
         }
-        
+
         if (charCategory == 4 )
         {
             charList.append("你")
@@ -148,9 +146,6 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
             
     }
     
-    @IBAction func goBack(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -190,6 +185,10 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dest = segue.destination as! WritingViewController
         dest.currentChar = sender as! String
+    }
+    
+    @IBAction func BackButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
 }

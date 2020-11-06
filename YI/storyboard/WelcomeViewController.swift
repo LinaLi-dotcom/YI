@@ -1,16 +1,14 @@
 //
-//  HomeViewController.swift
+//  WelcomeViewController.swift
 //  YI
 //
-//  Created by Lina Li on 2020-10-15.
+//  Created by Lina Li on 2020-11-05.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class WelcomeViewController: UIViewController {
 
-    @IBOutlet weak var welcomeTextView: UITextView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
