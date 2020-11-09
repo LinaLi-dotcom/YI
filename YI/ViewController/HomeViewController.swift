@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var welcomeTextView: UITextView!
+    @IBOutlet weak var welcomeTextView: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

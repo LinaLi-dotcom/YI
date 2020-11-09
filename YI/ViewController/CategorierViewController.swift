@@ -32,6 +32,10 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
         return category.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "raden", for: indexPath) as! CategoryTableViewCell
         cell.FirstCategory.text = category[indexPath.row]
@@ -47,6 +51,7 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
         _ = category[indexPath.row]
         
         performSegue(withIdentifier: "showChar", sender: indexPath.row)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

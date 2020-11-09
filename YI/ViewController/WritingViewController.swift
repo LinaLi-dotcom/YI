@@ -10,7 +10,6 @@ import AVFoundation
 
 class Canvas: UIView{
     
-    
     var lineColor: UIColor!
     var lineWidth: CGFloat!
     var path: UIBezierPath!
@@ -74,10 +73,8 @@ class WritingViewController: UIViewController {
     @IBOutlet weak var meanLabel: UILabel!
     @IBOutlet weak var pinyinLabel: UILabel!
     
-//    var currentChar = ""
     
     var currentDrawChar : DrawChar!
-    
     let canvas = Canvas()
     
     override func viewDidLoad()
@@ -93,7 +90,6 @@ class WritingViewController: UIViewController {
         drawView.addSubview(canvas)
         canvas.backgroundColor = .white
         canvas.frame = drawView.bounds
-        
     }
     
     
@@ -107,6 +103,18 @@ class WritingViewController: UIViewController {
     }
     
     @IBAction func saveButton(_ sender: UIButton) {
+        let image = drawView.takeScreenShot()
+        UIImageWriteToSavedPhotosAlbum(image, self,  #selector(imageSaved(_:didFinishSavingWithError:contextType:)), nil)
+     
+    }
+    
+    @objc func imageSaved(_ image: UIImage, didFinishSavingWithError error: Error?, contextType: UnsafeRawPointer){
+        if error != nil{
+            print("Unable to save the image into the photos")
+        }else{
+            print("Image saved into the photos")
+        }
+        
     }
     
     @IBAction func speakButton(_ sender: UIButton) {
@@ -123,4 +131,21 @@ class WritingViewController: UIViewController {
         synthesizer.speak(utterance)
         
     }
+}
+
+extension UIView {
+  
+    func takeScreenShot() -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, UIScreen.main.scale)
+        drawHierarchy(in: self.bounds, afterScreenUpdates: true)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        
+        if image != nil{
+        return image!
+        }
+        return UIImage()
+        
+    }
+
 }
