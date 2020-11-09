@@ -84,6 +84,8 @@ class WritingViewController: UIViewController {
     {
         super.viewDidLoad()
         charLabel.text = currentDrawChar.char
+        meanLabel.text = currentDrawChar.meaning
+        pinyinLabel.text = currentDrawChar.pinyin
         
     }
     

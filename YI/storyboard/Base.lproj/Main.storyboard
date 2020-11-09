@@ -94,7 +94,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="FirstCategory" destination="iy3-mS-lXL" id="cel-Y8-LPe"/>
+                                            <outlet property="FirstCategory" destination="iy3-mS-lXL" id="ykK-ts-qTS"/>
+                                            <outlet property="FirstTableViewCell" destination="mt2-sP-Vj5" id="EfT-Cv-hXC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -170,6 +171,9 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.86693477630000004" green="0.90172559019999998" blue="0.92157262559999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="theCharLabel" destination="Zjl-tb-Sqa" id="PJv-Q0-upF"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

@@ -179,10 +179,14 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharCell", for: indexPath) as! CharCollectionViewCell
-            cell.theCharLabel.text = chars[indexPath.row].char
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharCell", for: indexPath) as! CharCollectionViewCell
+            if let text = cell.theCharLabel {
+                text.text = chars[indexPath.row].char
+            } else
+            {
+//                error
+            }
             return cell
-            
         }
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
