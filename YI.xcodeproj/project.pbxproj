@@ -20,7 +20,6 @@
 		9E5FB76E25509E6F008C6963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E5FB76D25509E6F008C6963 /* Assets.xcassets */; };
 		9E7576FC2554A36100D33D8E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7576FB2554A36100D33D8E /* WelcomeViewController.swift */; };
 		9E8B78C0252B32DB00F3DAD1 /* CategorierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */; };
-		9E8B78C5252B47F900F3DAD1 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */; };
 		9EAE1F6B25332EA20034E82C /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1F6A25332EA20034E82C /* CharViewController.swift */; };
 		9EAE1F702533756F0034E82C /* CharCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */; };
 		9EE9110425397F0600204165 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE9110325397F0600204165 /* WritingViewController.swift */; };
@@ -66,7 +65,6 @@
 		9E5FB76D25509E6F008C6963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/AppIcons-2/Assets.xcassets"; sourceTree = "<group>"; };
 		9E7576FB2554A36100D33D8E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = YI/storyboard/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorierViewController.swift; sourceTree = "<group>"; };
-		9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		9EAE1F6A25332EA20034E82C /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
 		9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCollectionViewCell.swift; sourceTree = "<group>"; };
 		9EE9110325397F0600204165 /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 		9E4454BB2538678700C27493 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9E8B78C4252B47F900F3DAD1 /* CategoryTableViewCell.swift */,
 				9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */,
 			);
 			path = View;
@@ -458,7 +455,6 @@
 				9EAE1F6B25332EA20034E82C /* CharViewController.swift in Sources */,
 				9E4454C125386EDE00C27493 /* HomeViewController.swift in Sources */,
 				9EE9110425397F0600204165 /* WritingViewController.swift in Sources */,
-				9E8B78C5252B47F900F3DAD1 /* CategoryTableViewCell.swift in Sources */,
 				9E8B78C0252B32DB00F3DAD1 /* CategorierViewController.swift in Sources */,
 				9EAE1F702533756F0034E82C /* CharCollectionViewCell.swift in Sources */,
 			);

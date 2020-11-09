@@ -24,7 +24,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ki-Lr-3OT">
                                 <rect key="frame" x="0.0" y="88" width="414" height="573"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">  Write and Relax   Do you know that the oldest Chinese writing has been found on animal bones 3600 years old?    Around1.28 billion people can write Chinese.  "Every stroke of Chinese calligraphy was thought to be inspired by a natural object and to have the energy of a living thing." (From historian R. Dawson) </string>
+                                <string key="text">  Write and Relax   Do you know that the oldest Chinese writing has been found on animal bones 3600 years old?    Around 1.28 billion people can write Chinese.  By writing Chinese characters, you can feel the energy that come from every stroke of it.   Take a deep breath and start the journey </string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -170,9 +170,6 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.86693477630000004" green="0.90172559019999998" blue="0.92157262559999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <connections>
-                                            <outlet property="theCharLabel" destination="Zjl-tb-Sqa" id="VUQ-xN-2Wv"/>
-                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -253,11 +250,43 @@
                                     <action selector="BackButton:" destination="Gav-yc-MfJ" eventType="touchUpInside" id="wCh-2z-HcW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPG-PN-9m6">
-                                <rect key="frame" x="182" y="812" width="50" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meaning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-2O-65V">
+                                <rect key="frame" x="40" y="238" width="80" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="ez8-sG-nws"/>
-                                    <constraint firstAttribute="height" constant="50" id="vS1-oJ-xIy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="AC2-6V-zFc"/>
+                                    <constraint firstAttribute="height" constant="40" id="jn4-I9-si3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinyin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOi-Xv-McS">
+                                <rect key="frame" x="294" y="238" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="MhI-hW-5Cu"/>
+                                    <constraint firstAttribute="height" constant="40" id="eqp-oi-yef"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1c3-tY-84w">
+                                <rect key="frame" x="70" y="822" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3Z3-yV-SCv"/>
+                                    <constraint firstAttribute="width" constant="50" id="hme-c3-XJr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="Gav-yc-MfJ" eventType="touchUpInside" id="2NP-Ls-ltk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPG-PN-9m6">
+                                <rect key="frame" x="294" y="822" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0Tp-RQ-Poh"/>
+                                    <constraint firstAttribute="width" constant="50" id="lxZ-Gs-iQR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Clear"/>
@@ -272,17 +301,23 @@
                         <constraints>
                             <constraint firstItem="MRv-VW-NfG" firstAttribute="top" secondItem="7we-14-i9b" secondAttribute="bottom" constant="20" id="0at-B7-M9M"/>
                             <constraint firstItem="MRv-VW-NfG" firstAttribute="leading" secondItem="yHX-xf-u0F" secondAttribute="leading" constant="20" id="6Gc-Mw-se0"/>
+                            <constraint firstItem="7we-14-i9b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fwk-2O-65V" secondAttribute="trailing" constant="8" symbolic="YES" id="6LY-Jc-kdg"/>
+                            <constraint firstItem="yHX-xf-u0F" firstAttribute="trailing" secondItem="fPG-PN-9m6" secondAttribute="trailing" constant="70" id="822-pO-51b"/>
                             <constraint firstItem="bLu-PR-YdS" firstAttribute="leading" secondItem="yHX-xf-u0F" secondAttribute="leading" id="CqT-hW-rq2"/>
-                            <constraint firstItem="fPG-PN-9m6" firstAttribute="top" secondItem="MRv-VW-NfG" secondAttribute="bottom" constant="10" id="Ddh-os-QNf"/>
                             <constraint firstItem="7we-14-i9b" firstAttribute="top" secondItem="Kc9-zo-KUI" secondAttribute="bottom" constant="8" symbolic="YES" id="G2w-Av-A24"/>
                             <constraint firstItem="yHX-xf-u0F" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7we-14-i9b" secondAttribute="trailing" symbolic="YES" id="Gx5-0P-mBy"/>
-                            <constraint firstItem="fPG-PN-9m6" firstAttribute="bottom" secondItem="yHX-xf-u0F" secondAttribute="bottom" id="J2a-k3-IbH"/>
                             <constraint firstItem="7we-14-i9b" firstAttribute="leading" secondItem="yHX-xf-u0F" secondAttribute="leading" constant="170" id="KDg-65-Da2"/>
                             <constraint firstItem="yHX-xf-u0F" firstAttribute="bottom" secondItem="MRv-VW-NfG" secondAttribute="bottom" constant="60" id="KLb-90-Vs2"/>
                             <constraint firstItem="Kc9-zo-KUI" firstAttribute="top" secondItem="yHX-xf-u0F" secondAttribute="top" constant="40" id="MFE-TW-DhU"/>
+                            <constraint firstItem="fPG-PN-9m6" firstAttribute="top" secondItem="MRv-VW-NfG" secondAttribute="bottom" constant="20" id="MkQ-QJ-XpA"/>
+                            <constraint firstItem="yHX-xf-u0F" firstAttribute="trailing" secondItem="uOi-Xv-McS" secondAttribute="trailing" constant="40" id="Oti-NM-DOM"/>
+                            <constraint firstItem="Fwk-2O-65V" firstAttribute="leading" secondItem="yHX-xf-u0F" secondAttribute="leading" constant="40" id="UH0-JU-rWG"/>
+                            <constraint firstItem="1c3-tY-84w" firstAttribute="leading" secondItem="yHX-xf-u0F" secondAttribute="leading" constant="70" id="XBm-HN-90I"/>
+                            <constraint firstItem="MRv-VW-NfG" firstAttribute="top" secondItem="uOi-Xv-McS" secondAttribute="bottom" constant="20" id="ZpJ-YN-jFA"/>
                             <constraint firstItem="Kc9-zo-KUI" firstAttribute="centerX" secondItem="3el-xh-U2d" secondAttribute="centerX" id="aj4-6J-nOv"/>
+                            <constraint firstItem="1c3-tY-84w" firstAttribute="top" secondItem="MRv-VW-NfG" secondAttribute="bottom" constant="20" id="bzM-1E-ZmQ"/>
+                            <constraint firstItem="MRv-VW-NfG" firstAttribute="top" secondItem="Fwk-2O-65V" secondAttribute="bottom" constant="20" id="cnY-0x-E8G"/>
                             <constraint firstItem="bLu-PR-YdS" firstAttribute="top" secondItem="yHX-xf-u0F" secondAttribute="top" id="eFg-Y5-Q6w"/>
-                            <constraint firstItem="fPG-PN-9m6" firstAttribute="centerX" secondItem="3el-xh-U2d" secondAttribute="centerX" id="iFz-zd-RIE"/>
                             <constraint firstItem="yHX-xf-u0F" firstAttribute="trailing" secondItem="MRv-VW-NfG" secondAttribute="trailing" constant="20" id="zG6-XV-c2h"/>
                         </constraints>
                     </view>
@@ -291,6 +326,8 @@
                     <connections>
                         <outlet property="charLabel" destination="Kc9-zo-KUI" id="etE-zm-1GK"/>
                         <outlet property="drawView" destination="MRv-VW-NfG" id="Bba-Tz-kNc"/>
+                        <outlet property="meanLabel" destination="Fwk-2O-65V" id="ki3-q5-SLR"/>
+                        <outlet property="pinyinLabel" destination="uOi-Xv-McS" id="yKL-Ls-Ofa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YuG-ds-mbv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -57,9 +57,9 @@ class Canvas: UIView{
     func clearCanvas()
     {
         if path != nil {
-        path.removeAllPoints()
-        self.layer.sublayers = nil
-        self.setNeedsDisplay()}
+            path.removeAllPoints()
+            self.layer.sublayers = nil
+            self.setNeedsDisplay()}
         else{
             
         }
@@ -71,41 +71,31 @@ class WritingViewController: UIViewController {
     
     @IBOutlet weak var drawView: UIView!
     @IBOutlet weak var charLabel: UILabel!
-    
-    var currentChar = ""
-    let canvas = Canvas()
-    
     @IBOutlet weak var meanLabel: UILabel!
-    @IBAction func speakButton(_ sender: UIButton) {
-        speak()
-    }
+    @IBOutlet weak var pinyinLabel: UILabel!
     
-    func speak(){
-      
-        let utterance = AVSpeechUtterance(string: currentChar)
-        utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
-        utterance.rate = 0.1
-        
-        let synthesizer = AVSpeechSynthesizer()
-        synthesizer.speak(utterance)
-        
-        
-    }
+//    var currentChar = ""
+    
+    var currentDrawChar : DrawChar!
+    
+    let canvas = Canvas()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        charLabel.text = currentDrawChar.char
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         drawView.addSubview(canvas)
         canvas.backgroundColor = .white
         canvas.frame = drawView.bounds
-        charLabel.text = currentChar
+        
     }
     
-
-
+    
+    
     @IBAction func BackButton(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
@@ -114,4 +104,21 @@ class WritingViewController: UIViewController {
         canvas.clearCanvas()
     }
     
+    @IBAction func saveButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func speakButton(_ sender: UIButton) {
+        speak()
+    }
+    
+    func speak(){
+        
+        let utterance = AVSpeechUtterance(string: currentDrawChar.char)
+        utterance.voice = AVSpeechSynthesisVoice(language: "zh-CN")
+        utterance.rate = 0.1
+        
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speak(utterance)
+        
+    }
 }
