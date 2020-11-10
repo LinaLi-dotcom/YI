@@ -54,8 +54,6 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         if(charCategory == 1)
         {
-        
-            chars.append(DrawChar(ch: "一", me: "No meaning", pi: "héng"))
             chars.append(DrawChar(ch: "丨", me: "No meaning", pi: "shù"))
             chars.append(DrawChar(ch: "、", me: "No meaninig", pi: "diǎn"))
             chars.append(DrawChar(ch: "丿", me: "No meaning", pi: "piě"))

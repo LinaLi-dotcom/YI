@@ -80,10 +80,10 @@ class WritingViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        charLabel.text = currentDrawChar.char
-        meanLabel.text = currentDrawChar.meaning
-        pinyinLabel.text = currentDrawChar.pinyin
         
+        charLabel.text = currentDrawChar?.char
+        meanLabel.text = currentDrawChar?.meaning
+        pinyinLabel.text = currentDrawChar?.pinyin
     }
     
     override func viewDidAppear(_ animated: Bool) {
