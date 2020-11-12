@@ -11,6 +11,7 @@ class CharCollectionViewCell: UICollectionViewCell {
     
     
     @IBOutlet weak var theCharLabel: UILabel!
+    @IBOutlet weak var theMLabel: UILabel!
     
     /*func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         

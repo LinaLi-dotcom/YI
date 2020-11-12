@@ -38,17 +38,20 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "raden", for: indexPath) as! CategoryTableViewCell
-        cell.FirstCategory.text = category[indexPath.row]
+        cell.firstCategory.text = category[indexPath.row]
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
         if (category.count == 0)
         {
             return
         }
         _ = category[indexPath.row]
+        
         
         performSegue(withIdentifier: "showChar", sender: indexPath.row)
         

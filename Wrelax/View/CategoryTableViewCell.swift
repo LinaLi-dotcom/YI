@@ -1,15 +1,15 @@
 //
 //  CategoryTableViewCell.swift
-//  YI
+//  Wrelax
 //
-//  Created by Lina Li on 2020-10-05.
+//  Created by Lina Li on 2020-11-10.
 //
 
 import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var FirstCategory: UILabel!
+    @IBOutlet weak var firstCategory: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

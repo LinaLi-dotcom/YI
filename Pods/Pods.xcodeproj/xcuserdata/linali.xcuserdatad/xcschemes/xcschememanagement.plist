@@ -95,21 +95,21 @@
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
-		<key>Pods-YI-YIUITests.xcscheme</key>
+		<key>Pods-Wrelax-WrelaxUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
-		<key>Pods-YI.xcscheme</key>
+		<key>Pods-Wrelax.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
-		<key>Pods-YITests.xcscheme</key>
+		<key>Pods-WrelaxTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

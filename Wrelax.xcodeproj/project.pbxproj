@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DD8688BAADC9791430A5514 /* Pods_YITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4AF85B05E1F9BAAD70E604C /* Pods_YITests.framework */; };
-		27286A69375C4609879C8346 /* Pods_YI_YIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72497022E8D8419945BC9439 /* Pods_YI_YIUITests.framework */; };
 		9E4454C125386EDE00C27493 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4454C025386EDE00C27493 /* HomeViewController.swift */; };
-		9E44AF982559C77F00B83078 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E44AF972559C77F00B83078 /* CategoryTableViewCell.swift */; };
+		9E47D517255ADAA600F58ED6 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E47D516255ADAA600F58ED6 /* CategoryTableViewCell.swift */; };
 		9E4C7CC02524A87300471EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C7CBF2524A87300471EFE /* AppDelegate.swift */; };
 		9E4C7CC22524A87300471EFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C7CC12524A87300471EFE /* SceneDelegate.swift */; };
 		9E4C7CC72524A87300471EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4C7CC52524A87300471EFE /* Main.storyboard */; };
@@ -19,12 +17,13 @@
 		9E4C7CE22524A87300471EFE /* YIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C7CE12524A87300471EFE /* YIUITests.swift */; };
 		9E504A4B252613810034AACC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E504A4A252613810034AACC /* GoogleService-Info.plist */; };
 		9E5FB76E25509E6F008C6963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E5FB76D25509E6F008C6963 /* Assets.xcassets */; };
-		9E7576FC2554A36100D33D8E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7576FB2554A36100D33D8E /* WelcomeViewController.swift */; };
 		9E8B78C0252B32DB00F3DAD1 /* CategorierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */; };
 		9EAE1F6B25332EA20034E82C /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1F6A25332EA20034E82C /* CharViewController.swift */; };
 		9EAE1F702533756F0034E82C /* CharCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */; };
 		9EE9110425397F0600204165 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE9110325397F0600204165 /* WritingViewController.swift */; };
-		BD1B149001643D7663426A92 /* Pods_YI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DBD9F199FDA026F8FC054F /* Pods_YI.framework */; };
+		E86F27116AD8D480EF6DEB89 /* Pods_Wrelax_WrelaxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA1881BDA73FA2614F2969A7 /* Pods_Wrelax_WrelaxUITests.framework */; };
+		EA434C38EBC4067DB1DF5EB1 /* Pods_Wrelax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E25375C649F77092D71933 /* Pods_Wrelax.framework */; };
+		FA513657EA6AFDAB09C1759A /* Pods_WrelaxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3109BAB595502EDECE4E749 /* Pods_WrelaxTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,36 +44,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		187C7CBDBC82B7F236ECB92A /* Pods-WrelaxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrelaxTests.debug.xcconfig"; path = "Target Support Files/Pods-WrelaxTests/Pods-WrelaxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		33E25375C649F77092D71933 /* Pods_Wrelax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wrelax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		449247F6F641D31EC1FD0196 /* Pods-YI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YI.release.xcconfig"; path = "Target Support Files/Pods-YI/Pods-YI.release.xcconfig"; sourceTree = "<group>"; };
 		4597D86690820A4EF4C210DD /* Pods-YITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YITests.release.xcconfig"; path = "Target Support Files/Pods-YITests/Pods-YITests.release.xcconfig"; sourceTree = "<group>"; };
-		72497022E8D8419945BC9439 /* Pods_YI_YIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YI_YIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D153A6DEA4DA37A3472A849 /* Pods-Wrelax-WrelaxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wrelax-WrelaxUITests.release.xcconfig"; path = "Target Support Files/Pods-Wrelax-WrelaxUITests/Pods-Wrelax-WrelaxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7A36408A76669604B7689402 /* Pods-Wrelax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wrelax.debug.xcconfig"; path = "Target Support Files/Pods-Wrelax/Pods-Wrelax.debug.xcconfig"; sourceTree = "<group>"; };
 		7B7DBDB8F957F025EB452149 /* Pods-YI-YIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YI-YIUITests.release.xcconfig"; path = "Target Support Files/Pods-YI-YIUITests/Pods-YI-YIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89CE1A083BFCDCD19B9129AC /* Pods-Wrelax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wrelax.release.xcconfig"; path = "Target Support Files/Pods-Wrelax/Pods-Wrelax.release.xcconfig"; sourceTree = "<group>"; };
 		9E4454C025386EDE00C27493 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		9E44AF972559C77F00B83078 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryTableViewCell.swift; path = YI/storyboard/CategoryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		9E4C7CBC2524A87300471EFE /* YI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E47D516255ADAA600F58ED6 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		9E4C7CBC2524A87300471EFE /* Wrelax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wrelax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4C7CBF2524A87300471EFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E4C7CC12524A87300471EFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9E4C7CC62524A87300471EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9E4C7CCB2524A87300471EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E4C7CCD2524A87300471EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E4C7CD22524A87300471EFE /* YITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E4C7CD22524A87300471EFE /* WrelaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrelaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4C7CD62524A87300471EFE /* YITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YITests.swift; sourceTree = "<group>"; };
 		9E4C7CD82524A87300471EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9E4C7CDD2524A87300471EFE /* YIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E4C7CDD2524A87300471EFE /* WrelaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrelaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4C7CE12524A87300471EFE /* YIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YIUITests.swift; sourceTree = "<group>"; };
 		9E4C7CE32524A87300471EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E504A4A252613810034AACC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E5FB76D25509E6F008C6963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/AppIcons-2/Assets.xcassets"; sourceTree = "<group>"; };
-		9E7576FB2554A36100D33D8E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = YI/storyboard/WelcomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorierViewController.swift; sourceTree = "<group>"; };
 		9EAE1F6A25332EA20034E82C /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
 		9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCollectionViewCell.swift; sourceTree = "<group>"; };
 		9EE9110325397F0600204165 /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
 		AB7FF2207EE480F48E9525C6 /* Pods-YITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YITests.debug.xcconfig"; path = "Target Support Files/Pods-YITests/Pods-YITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B4AF85B05E1F9BAAD70E604C /* Pods_YITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2A6D12F3E6106E17DB2BAA9 /* Pods-WrelaxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WrelaxTests.release.xcconfig"; path = "Target Support Files/Pods-WrelaxTests/Pods-WrelaxTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA1881BDA73FA2614F2969A7 /* Pods_Wrelax_WrelaxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wrelax_WrelaxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77594090E63562AC6CD0328 /* Pods-Wrelax-WrelaxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wrelax-WrelaxUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wrelax-WrelaxUITests/Pods-Wrelax-WrelaxUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D7B3EC585340EFE955F0B1F2 /* Pods-YI-YIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YI-YIUITests.debug.xcconfig"; path = "Target Support Files/Pods-YI-YIUITests/Pods-YI-YIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		EDEF422A975C53138E764B5A /* Pods-YI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YI.debug.xcconfig"; path = "Target Support Files/Pods-YI/Pods-YI.debug.xcconfig"; sourceTree = "<group>"; };
-		F0DBD9F199FDA026F8FC054F /* Pods_YI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3109BAB595502EDECE4E749 /* Pods_WrelaxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WrelaxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD1B149001643D7663426A92 /* Pods_YI.framework in Frameworks */,
+				EA434C38EBC4067DB1DF5EB1 /* Pods_Wrelax.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD8688BAADC9791430A5514 /* Pods_YITests.framework in Frameworks */,
+				FA513657EA6AFDAB09C1759A /* Pods_WrelaxTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27286A69375C4609879C8346 /* Pods_YI_YIUITests.framework in Frameworks */,
+				E86F27116AD8D480EF6DEB89 /* Pods_Wrelax_WrelaxUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +118,12 @@
 				7B7DBDB8F957F025EB452149 /* Pods-YI-YIUITests.release.xcconfig */,
 				AB7FF2207EE480F48E9525C6 /* Pods-YITests.debug.xcconfig */,
 				4597D86690820A4EF4C210DD /* Pods-YITests.release.xcconfig */,
+				7A36408A76669604B7689402 /* Pods-Wrelax.debug.xcconfig */,
+				89CE1A083BFCDCD19B9129AC /* Pods-Wrelax.release.xcconfig */,
+				C77594090E63562AC6CD0328 /* Pods-Wrelax-WrelaxUITests.debug.xcconfig */,
+				5D153A6DEA4DA37A3472A849 /* Pods-Wrelax-WrelaxUITests.release.xcconfig */,
+				187C7CBDBC82B7F236ECB92A /* Pods-WrelaxTests.debug.xcconfig */,
+				B2A6D12F3E6106E17DB2BAA9 /* Pods-WrelaxTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -121,9 +131,9 @@
 		5445C43043A8FF3A67E41684 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F0DBD9F199FDA026F8FC054F /* Pods_YI.framework */,
-				72497022E8D8419945BC9439 /* Pods_YI_YIUITests.framework */,
-				B4AF85B05E1F9BAAD70E604C /* Pods_YITests.framework */,
+				33E25375C649F77092D71933 /* Pods_Wrelax.framework */,
+				BA1881BDA73FA2614F2969A7 /* Pods_Wrelax_WrelaxUITests.framework */,
+				F3109BAB595502EDECE4E749 /* Pods_WrelaxTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,7 +141,6 @@
 		9E4454BA2538675300C27493 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9E7576FB2554A36100D33D8E /* WelcomeViewController.swift */,
 				9E4454C025386EDE00C27493 /* HomeViewController.swift */,
 				9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */,
 				9EAE1F6A25332EA20034E82C /* CharViewController.swift */,
@@ -143,8 +152,8 @@
 		9E4454BB2538678700C27493 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9E44AF972559C77F00B83078 /* CategoryTableViewCell.swift */,
 				9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */,
+				9E47D516255ADAA600F58ED6 /* CategoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,9 +169,9 @@
 		9E4C7CB32524A87300471EFE = {
 			isa = PBXGroup;
 			children = (
-				9E4C7CBE2524A87300471EFE /* YI */,
-				9E4C7CD52524A87300471EFE /* YITests */,
-				9E4C7CE02524A87300471EFE /* YIUITests */,
+				9E4C7CBE2524A87300471EFE /* Wrelax */,
+				9E4C7CD52524A87300471EFE /* WrelaxTests */,
+				9E4C7CE02524A87300471EFE /* WrelaxUITests */,
 				9E4C7CBD2524A87300471EFE /* Products */,
 				16C66FB8730FF3FB302326AF /* Pods */,
 				5445C43043A8FF3A67E41684 /* Frameworks */,
@@ -172,14 +181,14 @@
 		9E4C7CBD2524A87300471EFE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E4C7CBC2524A87300471EFE /* YI.app */,
-				9E4C7CD22524A87300471EFE /* YITests.xctest */,
-				9E4C7CDD2524A87300471EFE /* YIUITests.xctest */,
+				9E4C7CBC2524A87300471EFE /* Wrelax.app */,
+				9E4C7CD22524A87300471EFE /* WrelaxTests.xctest */,
+				9E4C7CDD2524A87300471EFE /* WrelaxUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E4C7CBE2524A87300471EFE /* YI */ = {
+		9E4C7CBE2524A87300471EFE /* Wrelax */ = {
 			isa = PBXGroup;
 			children = (
 				9E4454BC253867B100C27493 /* storyboard */,
@@ -192,33 +201,33 @@
 				9E4C7CCA2524A87300471EFE /* LaunchScreen.storyboard */,
 				9E4C7CCD2524A87300471EFE /* Info.plist */,
 			);
-			path = YI;
+			path = Wrelax;
 			sourceTree = "<group>";
 		};
-		9E4C7CD52524A87300471EFE /* YITests */ = {
+		9E4C7CD52524A87300471EFE /* WrelaxTests */ = {
 			isa = PBXGroup;
 			children = (
 				9E4C7CD62524A87300471EFE /* YITests.swift */,
 				9E4C7CD82524A87300471EFE /* Info.plist */,
 			);
-			path = YITests;
+			path = WrelaxTests;
 			sourceTree = "<group>";
 		};
-		9E4C7CE02524A87300471EFE /* YIUITests */ = {
+		9E4C7CE02524A87300471EFE /* WrelaxUITests */ = {
 			isa = PBXGroup;
 			children = (
 				9E4C7CE12524A87300471EFE /* YIUITests.swift */,
 				9E4C7CE32524A87300471EFE /* Info.plist */,
 			);
-			path = YIUITests;
+			path = WrelaxUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E4C7CBB2524A87300471EFE /* YI */ = {
+		9E4C7CBB2524A87300471EFE /* Wrelax */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E4C7CE62524A87300471EFE /* Build configuration list for PBXNativeTarget "YI" */;
+			buildConfigurationList = 9E4C7CE62524A87300471EFE /* Build configuration list for PBXNativeTarget "Wrelax" */;
 			buildPhases = (
 				5A0B55D4DFF3BF75BEBA71C2 /* [CP] Check Pods Manifest.lock */,
 				9E4C7CB82524A87300471EFE /* Sources */,
@@ -230,14 +239,14 @@
 			);
 			dependencies = (
 			);
-			name = YI;
+			name = Wrelax;
 			productName = YI;
-			productReference = 9E4C7CBC2524A87300471EFE /* YI.app */;
+			productReference = 9E4C7CBC2524A87300471EFE /* Wrelax.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9E4C7CD12524A87300471EFE /* YITests */ = {
+		9E4C7CD12524A87300471EFE /* WrelaxTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E4C7CE92524A87300471EFE /* Build configuration list for PBXNativeTarget "YITests" */;
+			buildConfigurationList = 9E4C7CE92524A87300471EFE /* Build configuration list for PBXNativeTarget "WrelaxTests" */;
 			buildPhases = (
 				68A4930C8B66CBF33610BEC9 /* [CP] Check Pods Manifest.lock */,
 				9E4C7CCE2524A87300471EFE /* Sources */,
@@ -249,14 +258,14 @@
 			dependencies = (
 				9E4C7CD42524A87300471EFE /* PBXTargetDependency */,
 			);
-			name = YITests;
+			name = WrelaxTests;
 			productName = YITests;
-			productReference = 9E4C7CD22524A87300471EFE /* YITests.xctest */;
+			productReference = 9E4C7CD22524A87300471EFE /* WrelaxTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9E4C7CDC2524A87300471EFE /* YIUITests */ = {
+		9E4C7CDC2524A87300471EFE /* WrelaxUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E4C7CEC2524A87300471EFE /* Build configuration list for PBXNativeTarget "YIUITests" */;
+			buildConfigurationList = 9E4C7CEC2524A87300471EFE /* Build configuration list for PBXNativeTarget "WrelaxUITests" */;
 			buildPhases = (
 				D751D90DCA3650215DB63E19 /* [CP] Check Pods Manifest.lock */,
 				9E4C7CD92524A87300471EFE /* Sources */,
@@ -269,9 +278,9 @@
 			dependencies = (
 				9E4C7CDF2524A87300471EFE /* PBXTargetDependency */,
 			);
-			name = YIUITests;
+			name = WrelaxUITests;
 			productName = YIUITests;
-			productReference = 9E4C7CDD2524A87300471EFE /* YIUITests.xctest */;
+			productReference = 9E4C7CDD2524A87300471EFE /* WrelaxUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +305,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E4C7CB72524A87300471EFE /* Build configuration list for PBXProject "YI" */;
+			buildConfigurationList = 9E4C7CB72524A87300471EFE /* Build configuration list for PBXProject "Wrelax" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -309,9 +318,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E4C7CBB2524A87300471EFE /* YI */,
-				9E4C7CD12524A87300471EFE /* YITests */,
-				9E4C7CDC2524A87300471EFE /* YIUITests */,
+				9E4C7CBB2524A87300471EFE /* Wrelax */,
+				9E4C7CD12524A87300471EFE /* WrelaxTests */,
+				9E4C7CDC2524A87300471EFE /* WrelaxUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -351,15 +360,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YI/Pods-YI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Wrelax/Pods-Wrelax-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YI/Pods-YI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Wrelax/Pods-Wrelax-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YI/Pods-YI-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wrelax/Pods-Wrelax-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5A0B55D4DFF3BF75BEBA71C2 /* [CP] Check Pods Manifest.lock */ = {
@@ -377,7 +386,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YI-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Wrelax-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,7 +408,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-WrelaxTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -421,7 +430,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YI-YIUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Wrelax-WrelaxUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -434,15 +443,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YI-YIUITests/Pods-YI-YIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Wrelax-WrelaxUITests/Pods-Wrelax-WrelaxUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-YI-YIUITests/Pods-YI-YIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Wrelax-WrelaxUITests/Pods-Wrelax-WrelaxUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YI-YIUITests/Pods-YI-YIUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wrelax-WrelaxUITests/Pods-Wrelax-WrelaxUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -453,14 +462,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E4C7CC02524A87300471EFE /* AppDelegate.swift in Sources */,
-				9E7576FC2554A36100D33D8E /* WelcomeViewController.swift in Sources */,
 				9E4C7CC22524A87300471EFE /* SceneDelegate.swift in Sources */,
 				9EAE1F6B25332EA20034E82C /* CharViewController.swift in Sources */,
 				9E4454C125386EDE00C27493 /* HomeViewController.swift in Sources */,
+				9E47D517255ADAA600F58ED6 /* CategoryTableViewCell.swift in Sources */,
 				9EE9110425397F0600204165 /* WritingViewController.swift in Sources */,
 				9E8B78C0252B32DB00F3DAD1 /* CategorierViewController.swift in Sources */,
 				9EAE1F702533756F0034E82C /* CharCollectionViewCell.swift in Sources */,
-				9E44AF982559C77F00B83078 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,12 +493,12 @@
 /* Begin PBXTargetDependency section */
 		9E4C7CD42524A87300471EFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9E4C7CBB2524A87300471EFE /* YI */;
+			target = 9E4C7CBB2524A87300471EFE /* Wrelax */;
 			targetProxy = 9E4C7CD32524A87300471EFE /* PBXContainerItemProxy */;
 		};
 		9E4C7CDF2524A87300471EFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9E4C7CBB2524A87300471EFE /* YI */;
+			target = 9E4C7CBB2524A87300471EFE /* Wrelax */;
 			targetProxy = 9E4C7CDE2524A87300471EFE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -633,21 +641,21 @@
 		};
 		9E4C7CE72524A87300471EFE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDEF422A975C53138E764B5A /* Pods-YI.debug.xcconfig */;
+			baseConfigurationReference = 7A36408A76669604B7689402 /* Pods-Wrelax.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 93MKZBH3SD;
-				INFOPLIST_FILE = YI/Info.plist;
+				INFOPLIST_FILE = Wrelax/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.YI;
+				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.Wrelax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -656,21 +664,21 @@
 		};
 		9E4C7CE82524A87300471EFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 449247F6F641D31EC1FD0196 /* Pods-YI.release.xcconfig */;
+			baseConfigurationReference = 89CE1A083BFCDCD19B9129AC /* Pods-Wrelax.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_TEAM = 93MKZBH3SD;
-				INFOPLIST_FILE = YI/Info.plist;
+				INFOPLIST_FILE = Wrelax/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.YI;
+				PRODUCT_BUNDLE_IDENTIFIER = se.linasappar.Wrelax;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -679,7 +687,7 @@
 		};
 		9E4C7CEA2524A87300471EFE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB7FF2207EE480F48E9525C6 /* Pods-YITests.debug.xcconfig */;
+			baseConfigurationReference = 187C7CBDBC82B7F236ECB92A /* Pods-WrelaxTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -695,13 +703,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YI.app/YI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wrelax.app/Wrelax";
 			};
 			name = Debug;
 		};
 		9E4C7CEB2524A87300471EFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4597D86690820A4EF4C210DD /* Pods-YITests.release.xcconfig */;
+			baseConfigurationReference = B2A6D12F3E6106E17DB2BAA9 /* Pods-WrelaxTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -717,13 +725,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YI.app/YI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wrelax.app/Wrelax";
 			};
 			name = Release;
 		};
 		9E4C7CED2524A87300471EFE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7B3EC585340EFE955F0B1F2 /* Pods-YI-YIUITests.debug.xcconfig */;
+			baseConfigurationReference = C77594090E63562AC6CD0328 /* Pods-Wrelax-WrelaxUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -743,7 +751,7 @@
 		};
 		9E4C7CEE2524A87300471EFE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B7DBDB8F957F025EB452149 /* Pods-YI-YIUITests.release.xcconfig */;
+			baseConfigurationReference = 5D153A6DEA4DA37A3472A849 /* Pods-Wrelax-WrelaxUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -764,7 +772,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E4C7CB72524A87300471EFE /* Build configuration list for PBXProject "YI" */ = {
+		9E4C7CB72524A87300471EFE /* Build configuration list for PBXProject "Wrelax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E4C7CE42524A87300471EFE /* Debug */,
@@ -773,7 +781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E4C7CE62524A87300471EFE /* Build configuration list for PBXNativeTarget "YI" */ = {
+		9E4C7CE62524A87300471EFE /* Build configuration list for PBXNativeTarget "Wrelax" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E4C7CE72524A87300471EFE /* Debug */,
@@ -782,7 +790,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E4C7CE92524A87300471EFE /* Build configuration list for PBXNativeTarget "YITests" */ = {
+		9E4C7CE92524A87300471EFE /* Build configuration list for PBXNativeTarget "WrelaxTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E4C7CEA2524A87300471EFE /* Debug */,
@@ -791,7 +799,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E4C7CEC2524A87300471EFE /* Build configuration list for PBXNativeTarget "YIUITests" */ = {
+		9E4C7CEC2524A87300471EFE /* Build configuration list for PBXNativeTarget "WrelaxUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E4C7CED2524A87300471EFE /* Debug */,

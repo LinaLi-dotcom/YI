@@ -178,12 +178,20 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             
            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CharCell", for: indexPath) as! CharCollectionViewCell
-            if let text = cell.theCharLabel {
-                text.text = chars[indexPath.row].char
+            
+            if let text1 = cell.theCharLabel {
+                text1.text = chars[indexPath.row].char
             } else
             {
 //                error
             }
+            if let text2 = cell.theMLabel {
+                text2.text = chars[indexPath.row].meaning
+            } else
+            {
+//                error
+            }
+            
             return cell
         }
         
