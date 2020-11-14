@@ -11,13 +11,21 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeTextView: UILabel!
     
+    @IBOutlet weak var startBnt: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        startBnt.layer.cornerRadius = 20
+        startBnt.layer.borderWidth = 3
+       
     }
     
-
+    
+    
+    
     /*
     // MARK: - Navigation
 

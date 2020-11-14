@@ -73,6 +73,8 @@ class WritingViewController: UIViewController {
     @IBOutlet weak var meanLabel: UILabel!
     @IBOutlet weak var pinyinLabel: UILabel!
     
+    @IBOutlet weak var saveButtonStyle: UIButton!
+    @IBOutlet weak var ClearButtonStyle: UIButton!
     
     var currentDrawChar : DrawChar!
     let canvas = Canvas()
@@ -82,7 +84,17 @@ class WritingViewController: UIViewController {
         super.viewDidLoad()
         
         charLabel.text = currentDrawChar?.char
+        meanLabel.text = currentDrawChar?.meaning
         pinyinLabel.text = currentDrawChar?.pinyin
+        
+        
+        ClearButtonStyle.layer.cornerRadius = 20
+        ClearButtonStyle.layer.borderWidth = 3
+        
+        saveButtonStyle.layer.cornerRadius = 20
+        saveButtonStyle.layer.borderWidth = 3
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

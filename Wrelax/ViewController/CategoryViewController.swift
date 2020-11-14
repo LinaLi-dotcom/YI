@@ -7,11 +7,18 @@
 
 import UIKit
 
-class CategorierViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
+class CategoryViewController: UIViewController,UITableViewDelegate, UITableViewDataSource{
 
     @IBOutlet weak var CategoryTableView: UITableView!
     
     var category = [String] ()
+    
+    var colors = [Color(name: "lightskyblue", uiColor: UIColor(red: 0.76, green: 0.84, blue: 0.86, alpha: 1.00)),
+                  Color(name: "skyblue", uiColor: UIColor(red: 0.66, green: 0.78, blue: 0.80, alpha: 1.00)),
+                  Color(name: "lightskincolor", uiColor: UIColor(red: 0.97, green: 0.97, blue: 0.94, alpha: 1.00)),
+                  Color(name: "skincolor", uiColor: UIColor(red: 0.82, green: 0.79, blue: 0.78, alpha: 1.00)),
+                  Color(name: "purple", uiColor: UIColor.lightGray),
+                  Color(name: "brown", uiColor: UIColor.brown)]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +45,8 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "raden", for: indexPath) as! CategoryTableViewCell
-        cell.firstCategory.text = category[indexPath.row]
+        cell.categoryLabel?.text = category[indexPath.row]
+        cell.backgroundColor = colors[indexPath.row].uiColor
         return cell
     }
     
@@ -58,11 +66,20 @@ class CategorierViewController: UIViewController,UITableViewDelegate, UITableVie
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let dest = segue.destination as! CharViewController
-        dest.charCategory = sender as! Int
+        
+        
+        let nav = segue.destination as! UINavigationController
+        let svc = nav.topViewController as! CharViewController
+//        svc.toPassSearchKeyword = searchKeyword
+//
+//        let dest = segue.destination as! CharViewController
+        svc.charCategory = sender as! Int
         
     }
    
+    @IBAction func Back(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
 

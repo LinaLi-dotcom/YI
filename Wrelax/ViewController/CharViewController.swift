@@ -209,11 +209,16 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
         
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            let dest = segue.destination as! WritingViewController
-            dest.currentDrawChar = sender as! DrawChar
+            
+            let nav = segue.destination as! UINavigationController
+            let svc = nav.topViewController as! WritingViewController
+//            svc.toPassSearchKeyword = searchKeyword;
+//            let dest = segue.destination as! WritingViewController
+            svc.currentDrawChar = sender as! DrawChar
         }
         
-        @IBAction func BackButton(_ sender: UIButton) {
+    
+    @IBAction func BackButton(_ sender: UIButton) {
             dismiss(animated: true, completion: nil)
         }
         

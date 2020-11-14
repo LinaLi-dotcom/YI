@@ -9,7 +9,7 @@ import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var firstCategory: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

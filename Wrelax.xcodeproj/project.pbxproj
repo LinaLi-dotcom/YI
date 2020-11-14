@@ -9,15 +9,14 @@
 /* Begin PBXBuildFile section */
 		9E4454C125386EDE00C27493 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4454C025386EDE00C27493 /* HomeViewController.swift */; };
 		9E47D517255ADAA600F58ED6 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E47D516255ADAA600F58ED6 /* CategoryTableViewCell.swift */; };
+		9E4BCF74255DCB3800B7F23A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4BCF73255DCB3800B7F23A /* Color.swift */; };
 		9E4C7CC02524A87300471EFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C7CBF2524A87300471EFE /* AppDelegate.swift */; };
 		9E4C7CC22524A87300471EFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C7CC12524A87300471EFE /* SceneDelegate.swift */; };
 		9E4C7CC72524A87300471EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4C7CC52524A87300471EFE /* Main.storyboard */; };
 		9E4C7CCC2524A87300471EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4C7CCA2524A87300471EFE /* LaunchScreen.storyboard */; };
-		9E4C7CD72524A87300471EFE /* YITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C7CD62524A87300471EFE /* YITests.swift */; };
-		9E4C7CE22524A87300471EFE /* YIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C7CE12524A87300471EFE /* YIUITests.swift */; };
 		9E504A4B252613810034AACC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E504A4A252613810034AACC /* GoogleService-Info.plist */; };
 		9E5FB76E25509E6F008C6963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E5FB76D25509E6F008C6963 /* Assets.xcassets */; };
-		9E8B78C0252B32DB00F3DAD1 /* CategorierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */; };
+		9E8B78C0252B32DB00F3DAD1 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E8B78BF252B32DB00F3DAD1 /* CategoryViewController.swift */; };
 		9EAE1F6B25332EA20034E82C /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1F6A25332EA20034E82C /* CharViewController.swift */; };
 		9EAE1F702533756F0034E82C /* CharCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */; };
 		9EE9110425397F0600204165 /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE9110325397F0600204165 /* WritingViewController.swift */; };
@@ -54,6 +53,7 @@
 		89CE1A083BFCDCD19B9129AC /* Pods-Wrelax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wrelax.release.xcconfig"; path = "Target Support Files/Pods-Wrelax/Pods-Wrelax.release.xcconfig"; sourceTree = "<group>"; };
 		9E4454C025386EDE00C27493 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9E47D516255ADAA600F58ED6 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		9E4BCF73255DCB3800B7F23A /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		9E4C7CBC2524A87300471EFE /* Wrelax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wrelax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4C7CBF2524A87300471EFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E4C7CC12524A87300471EFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,14 +61,10 @@
 		9E4C7CCB2524A87300471EFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E4C7CCD2524A87300471EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4C7CD22524A87300471EFE /* WrelaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrelaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E4C7CD62524A87300471EFE /* YITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YITests.swift; sourceTree = "<group>"; };
-		9E4C7CD82524A87300471EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4C7CDD2524A87300471EFE /* WrelaxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WrelaxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E4C7CE12524A87300471EFE /* YIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YIUITests.swift; sourceTree = "<group>"; };
-		9E4C7CE32524A87300471EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E504A4A252613810034AACC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9E5FB76D25509E6F008C6963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/AppIcons-2/Assets.xcassets"; sourceTree = "<group>"; };
-		9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorierViewController.swift; sourceTree = "<group>"; };
+		9E8B78BF252B32DB00F3DAD1 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		9EAE1F6A25332EA20034E82C /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
 		9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCollectionViewCell.swift; sourceTree = "<group>"; };
 		9EE9110325397F0600204165 /* WritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				9E4454C025386EDE00C27493 /* HomeViewController.swift */,
-				9E8B78BF252B32DB00F3DAD1 /* CategorierViewController.swift */,
+				9E8B78BF252B32DB00F3DAD1 /* CategoryViewController.swift */,
 				9EAE1F6A25332EA20034E82C /* CharViewController.swift */,
 				9EE9110325397F0600204165 /* WritingViewController.swift */,
 			);
@@ -154,6 +150,7 @@
 			children = (
 				9EAE1F6F2533756F0034E82C /* CharCollectionViewCell.swift */,
 				9E47D516255ADAA600F58ED6 /* CategoryTableViewCell.swift */,
+				9E4BCF73255DCB3800B7F23A /* Color.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,8 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				9E4C7CBE2524A87300471EFE /* Wrelax */,
-				9E4C7CD52524A87300471EFE /* WrelaxTests */,
-				9E4C7CE02524A87300471EFE /* WrelaxUITests */,
 				9E4C7CBD2524A87300471EFE /* Products */,
 				16C66FB8730FF3FB302326AF /* Pods */,
 				5445C43043A8FF3A67E41684 /* Frameworks */,
@@ -202,24 +197,6 @@
 				9E4C7CCD2524A87300471EFE /* Info.plist */,
 			);
 			path = Wrelax;
-			sourceTree = "<group>";
-		};
-		9E4C7CD52524A87300471EFE /* WrelaxTests */ = {
-			isa = PBXGroup;
-			children = (
-				9E4C7CD62524A87300471EFE /* YITests.swift */,
-				9E4C7CD82524A87300471EFE /* Info.plist */,
-			);
-			path = WrelaxTests;
-			sourceTree = "<group>";
-		};
-		9E4C7CE02524A87300471EFE /* WrelaxUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9E4C7CE12524A87300471EFE /* YIUITests.swift */,
-				9E4C7CE32524A87300471EFE /* Info.plist */,
-			);
-			path = WrelaxUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,7 +444,8 @@
 				9E4454C125386EDE00C27493 /* HomeViewController.swift in Sources */,
 				9E47D517255ADAA600F58ED6 /* CategoryTableViewCell.swift in Sources */,
 				9EE9110425397F0600204165 /* WritingViewController.swift in Sources */,
-				9E8B78C0252B32DB00F3DAD1 /* CategorierViewController.swift in Sources */,
+				9E8B78C0252B32DB00F3DAD1 /* CategoryViewController.swift in Sources */,
+				9E4BCF74255DCB3800B7F23A /* Color.swift in Sources */,
 				9EAE1F702533756F0034E82C /* CharCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +454,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E4C7CD72524A87300471EFE /* YITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +461,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E4C7CE22524A87300471EFE /* YIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
